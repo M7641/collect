@@ -1,0 +1,14 @@
+------------------------------------------------ Admin Assistant:
+%---------------------------------------------------------
+\cventry
+	{Administrative Assistant} % Job title
+	{The Valley Medical Centre} % Organization
+	{75 Hartsbourne Avenue, Liverpool, L25 1RYI} % Location
+	{August-September 2014} % Date(s)
+	{
+	\begin{cvitems} % Description(s) of tasks/responsibilities
+	\item {I ensured data entries were entered appropriately and accurately. Then, retrieve and re-file records as required.}
+	\item {Further, I supported clinical staff and other practice team members by aiding in communication between patients and staff members. I also greeted patients and visitors courteously and offer all reasonable assistance.}
+	\end{cvitems}
+}
+%---------------------------------------------------------

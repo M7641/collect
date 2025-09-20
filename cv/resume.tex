@@ -1,0 +1,147 @@
+\documentclass[12pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+\definecolor{awesome}{HTML}{7851a9}
+
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{0c0c0c}
+\definecolor{graytext}{HTML}{1f1f1f}
+\definecolor{lighttext}{HTML}{333333}
+\definecolor{Royal}{HTML}{7851a9}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+% Available options: circle|rectangle,edge/noedge,left/right
+\name{Michael}{O'Donnell}
+\position{job title: Senior Data Scientist} % {\enskip\cdotp\enskip}
+\address{Location: Manchester, United Kingdom}
+
+\mobile{(+44) 7712 589981}
+\email{michael@eyecatching.co.uk}
+% \github{M7641}
+\linkedin{mike-o-donnell-715b8574}
+
+\begin{document}
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+\makecvfooter{}{Michael O'Donnell~~~·~~~Résumé}{\thepage}
+
+\cvsection{Summary}
+\begin{cvparagraph}
+
+I am a Lead Machine Learning Engineer at UiPath, a Software‑as‑a‑service company, since 2020. Previously, I was a Quantitative Analyst
+for the management consultancy Oliver Wyman. My higher education was in Mathematics (MSci) from Lancaster University. I also
+did a year abroad at Western University in Ontario, Canada.
+\newline \newline
+At Peak, I develop and deploy applications powered by Machine Learning (ML) models. I am responsible for end-to-end delivery,
+including data engineering, building machine learning models, providing outputs through web applications and APIs, and proving added business value through A/B testing.
+I have over seven years of experience in Python, R and multiple dialects of SQL. I'm driven by the desire to improve and optimise business processes continuously.
+\end{cvparagraph}
+
+
+\cvsection{Experience}
+\begin{cventries}
+
+\cventry{Lead Machine Learning Engineer}{UiPath}{Manchester Goods Yard, St.John’s, Manchester M3 3GS}{February 2020 - Present}
+{\begin{cvitems}
+\item {
+  My projects have been focused on Customer propensity models, Customer LTV models, Recommendation systems, e‑commerce pricing and markdown optimisation.
+  I act as the primary contact for the customer during solution deployment;   hence, I have experience in stakeholder management and presenting to non‑technical audiences,
+  including the C‑Suite level.
+}
+\item{A few projects of mine are:
+  \begin{enumerate}
+    \item  Developing a solution to explain black‑box machine learning models using SHAP values. The primary use
+    case was to advise on financial services product strategy by providing insights into the 17 separate
+    customer propensity models that I developed.
+    \item Deploying a markdown optimisation tool for a major UK fashion retailer with intense deadlines.
+    This solution increased gross margin by 9.4ppt with comparable sell‑through rates, as proven by an A/B test.
+    \item  Developing a P\&L application in a month that was used to identify 10 Million pounds of savings
+    within a medium‑sized retail business.
+    \item  Delivering a recommendation engine used within the CRM D365 to generate 2 Million pounds of additional
+    annual revenue for a manufacturing business along side other models such as a Customer LTV model.
+  \end{enumerate}
+}
+\item {The technical skills I use daily are data importing from various sources such as SFTP servers, REST Apis, and AWS's S3.
+  Data engineering through DBT on Data Warehouses such as AWS's Redshift and Snowflake. Python is used in developing ML
+  models, primarily using TensorFlow. APIs in FastAPI and Dash for Web Applications. The DevOps tools include git for version
+  control, docker for containerisation, and pre‑commit hooks for code hygiene. I adopt the best technology
+  for the job and continuously look for new ways to boost productivity.
+}
+\item {Outside of project delivery, I contribute to Peak's core products. I developed the first
+  version of our markdown application's front end and contribute React components to our component library. Also, I am
+  involved in various initiatives to improve code quality, including creating Python templates. I also help to maintain our internal tooling.}
+\item { Finally, I mentor several Data Scientists through coaching, technical support and project guidance.
+  This includes revising timelines and identifying risks in the projects for which my team is responsible.}
+\end{cvitems}
+\vspace{8.0mm}
+      \begin{cvsubentries}
+        \cvsubentry{}{Lead Machine Learning Engineer}{May 2025 - present}{}
+        \cvsubentry{}{Senior Data Scientist}{Janurary 2023 - May 2025}{}
+        \cvsubentry{}{Data Scientist}{Februrary 2020 - January 2023}{}
+      \end{cvsubentries}
+}
+\cventry{Financial Services Quantitative Analyst}{Oliver Wyman}{7 New Bridge St W, Newcastle upon Tyne NE1 8AQ}{March-September 2019}
+	{\begin{cvitems}
+	\item {
+My primary responsibility was to develop an ML model to improve the price decision‑making process
+of a rental motor insurance product and implement A/B testing to demonstrate efficacy.
+		}
+	\item {
+Another contribution was developing a report communicating key metrics around model performance. I used a
+Python implementation of reveal.js to generate an HTML file every week. This saved plenty of time as it avoided
+re-creating the report in PowerPoint.
+		}
+	\end{cvitems}
+}
+\end{cventries}
+
+\cvsection{Technical Skills}
+\begin{cvskills}
+\cvskill{Programming Languages:}{Python, R, TypeScript, and Rust. }
+\cvskill{SQL Dialects:}{Redshift, PostgreSQL, Apache Impala, MySQL, Snowflake, and using DBT for data pipeline management. }
+\cvskill{Model Development Packages:}{Tensorflow, XGBoost, LightGBM, PyMC3, scikit-learn}
+\cvskill{Data Processing Packages:}{Pandas, Numpy and Polars in Python. Tidyverse in R}
+\cvskill{CD/CI:}{Git, Github actions, Docker, Pre-commit hooks, Pytest}
+\cvskill{Data Visualisation:}{Matplotlib, Plotly, Bokeh in Python. ggplot, Plotly R in R. Mantine Charts in TypeScript.}
+\cvskill{Web Applications:}{Dash, React with Vite and R Shiny}
+\cvskill{API frameworks:}{FastAPI and Axum}
+\end{cvskills}
+
+\cvsection{Education}
+
+\begin{cventries}
+
+\cventry{MSci. First Class Honours in Mathematics (Study Abroad)}{Lancaster University}{}{2014 - 2018}{
+	\begin{cvitems}
+	\item {
+I chose courses to establish skills in Probability theory, Stochastic processes, ML and traditional
+skills in mathematical rigour and analysis. Other courses include Statistical methods, Reinforcement learning, Mathematical Spaces, Ring Theory, and Stochastic
+Calculus with a focus on the derivation of the Black‑Scholes model and Heston model for derivative pricing. Finally,
+my dissertation was complex analysis in several variables.
+		}
+	\item {
+		My year abroad was at Western University in Ontario, Canada. It was a great experience to study in a different
+		country and learn about the different teaching styles and cultures. Working abroad is something I would do in the future.
+	}
+	\end{cvitems}
+}
+
+\cventry{A-Levels}{Calderstones School}{}{2012-2014}{
+  Mathematics: A*, \space Physics: B, \space Further Mathematics: B.
+}
+
+\cventry{GCSEs}{Calderstones School}{}{2010-2012}{
+  Mathematics: A, English Language: C, 8 other GCSEs with grades A-C, 2 OCR Awards in IT, and a BTEC in sport.
+}
+
+\end{cventries}
+
+\end{document}
