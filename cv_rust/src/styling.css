@@ -1,0 +1,7 @@
+@media print {
+    body {
+        width: 21cm;
+        height: 29.7cm;
+        margin: 10mm 15mm 10mm 15mm;
+    }
+}
