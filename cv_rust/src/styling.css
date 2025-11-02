@@ -1,7 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f3f0;
+    color: #333;
+    line-height: 1.4;
+    padding: 40px 20px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #f5f3f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.name .first-name {
+    font-weight: 300;
+    color: #000;
+}
+
+.name .last-name {
+    font-weight: 700;
+    color: #6c3baa;
+}
+
+.job-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.location {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333;
+}
+
+.summary-text {
+    text-align: justify;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.job {
+    margin-bottom: 16px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.job-title-main {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.job-location {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    font-size: 14px;
+}
+
+.job-position {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.job-dates {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    font-size: 14px;
+    margin-top: -35px;
+    margin-bottom: 8px;
+}
+
+ul {
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+ol {
+    margin-left: 32px;
+    margin-top: 8px;
+}
+
+ol li {
+    margin-bottom: 8px;
+}
+
+.role-list {
+    margin-top: 20px;
+}
+
+.role-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.role-name {
+    font-weight: 600;
+}
+
+.role-dates {
+    font-style: italic;
+    color: #888;
+}
+
+/* Adding styles for Technical Skills section */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skill-row {
+    display: flex;
+    gap: 12px;
+}
+
+.skill-label {
+    font-weight: 600;
+    min-width: 220px;
+    text-align: right;
+    color: #333;
+    flex-shrink: 0;
+}
+
+.skill-content {
+    color: #444;
+    flex: 1;
+}
+
+/* Adding styles for Education section */
+.education-item {
+    margin-bottom: 16px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.education-institution {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.education-dates {
+    font-style: italic;
+    color: #888;
+    font-size: 14px;
+}
+
+.education-degree {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.education-details {
+    color: #444;
+    margin-bottom: 8px;
+}
+
 @media print {
     body {
         width: 21cm;
         height: 29.7cm;
-        margin: 10mm 15mm 10mm 15mm;
+        margin: 5mm 10mm 5mm 10mm;
+    }
+}
+
+@media print {
+    .page,
+    .page-break {
+        break-after: page;
     }
 }

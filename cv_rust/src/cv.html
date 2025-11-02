@@ -5,30 +5,187 @@
         <link rel="stylesheet" href="styling.css" />
     </head>
     <body>
-        <div>
-            <div style="width: 100%">
-                <div style="display: flex; justify-content: center">
-                    <div>Michael</div>
-                    <div
-                        style="
-                            font-weight: 800;
-                            margin-left: 4px;
-                            color: #4b006e;
-                        "
-                    >
-                        O'Donnell
+        <div class="container">
+            <header>
+                <h1 class="name">
+                    <span class="first-name">Michael</span>
+                    <span class="last-name">O'Donnell</span>
+                </h1>
+                <p class="job-title">Job Title: Senior Data Scientist</p>
+                <p class="location">Location: Manchester, United Kingdom</p>
+                <div class="contact-info">
+                    <span>📞 (+44) 7712 589981</span>
+                    <span>✉️ michael@eyecatching.co.uk</span>
+                </div>
+            </header>
+
+            <section>
+                <h2>Summary</h2>
+                <p class="summary-text">
+                    I am a Lead Machine Learning Engineer at UiPath, a Software-as-a-service company, since 2020. Previously, I was a Quantitative Analyst for the management consultancy Oliver Wyman. My higher education was in Mathematics (MSci) from Lancaster University. I also did a year abroad at Western University in Ontario, Canada.
+                </p>
+                <p class="summary-text">
+                    At Peak, I develop and deploy applications powered by Machine Learning (ML) models. I am responsible for end-to-end delivery, including data engineering, building machine learning models, providing outputs through web applications and APIs, and proving added business value through A/B testing. I have over seven years of experience in Python, R and multiple dialects of SQL. I'm driven by the desire to improve and optimise business processes continuously.
+                </p>
+            </section>
+
+            <section class="page">
+                <h2>Experience</h2>
+
+                <div class="job">
+                    <div class="job-header">
+                        <h3 class="job-title-main">UiPath</h3>
+                        <div class="job-location">
+                            Manchester Goods Yard,<br>
+                            St.John's, Manchester M3 3GS
+                        </div>
+                    </div>
+
+                    <p class="job-position">Lead Machine Learning Engineer</p>
+                    <p class="job-dates">2020 - Present</p>
+
+                    <ul>
+                        <li>My projects have been focused on Customer propensity models, Customer LTV models, Recommendation systems, e-commerce pricing and markdown optimisation. I act as the primary contact for the customer during solution deployment, hence I have experience in stakeholder management and presenting to non-technical audiences, including the C-Suite level.</li>
+
+                        <li>A few projects of mine are:
+                            <ol>
+                                <li>Developing a solution to explain black-box machine learning models using SHAP values. The primary use case was to advise on financial services product strategy by providing insights into the 17 separate customer propensity models that I developed.</li>
+
+                                <li>Deploying a markdown optimisation tool for a major UK fashion retailer with intense deadlines. This solution increased gross margin by 9.4ppt with comparable sell-through rates, as proven by an A/B test.</li>
+
+                                <li>Developing a P&L application in a month that was used to identify 10 Million pounds of savings within a medium-sized retail business.</li>
+
+                                <li>Delivering a recommendation engine used within the CRM D365 to generate 2 Million pounds of additional annual revenue for a manufacturing business along side other models such as a Customer LTV model.</li>
+                            </ol>
+                        </li>
+
+                        <li>The technical skills I use daily are data importing from various sources such as SFTP servers, REST Apis, and AWS's S3. Data engineering through DBT on Data Warehouses such as AWS's Redshift and Snowflake. Python is used in developing ML models, primarily using TensorFlow. APIs in FastAPI and Dash for Web Applications. The DevOps tools include git for version control, docker for containerisation, and pre-commit hooks for code hygiene. I adopt the best technology for the job and continuously look for new ways to boost productivity.</li>
+
+                        <li>Outside of project delivery, I contribute to Peak's core products. I developed the first version of our markdown application's front end and contribute React components to our component library. Also, I am involved in various initiatives to improve code quality, including creating Python templates. I also help to maintain our internal tooling.</li>
+
+                        <li>Finally, I mentor several Data Scientists through coaching, technical support and project guidance. This includes revising timelines and identifying risks in the projects for which my team is responsible.</li>
+                    </ul>
+
+                    <div class="role-list">
+                        <div class="role-item">
+                            <span class="role-name">Lead Machine Learning Engineer</span>
+                            <span class="role-dates">May 2025 - present</span>
+                        </div>
+                        <div class="role-item">
+                            <span class="role-name">Senior Machine Learning Engineer</span>
+                            <span class="role-dates">2023 - May 2025</span>
+                        </div>
+                        <div class="role-item">
+                            <span class="role-name">Data Scientist</span>
+                            <span class="role-dates">2020 - 2023</span>
+                        </div>
                     </div>
                 </div>
-                <div
-                    style="
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 4px;
-                    "
-                >
-                    <div>Job Title: Lead Machine Learning Engineer</div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <h3 class="job-title-main">Oliver Wyman</h3>
+                        <div class="job-location">
+                            7 New Bridge St W, Newcastle<br>
+                            upon Tyne NF1 8AQ
+                        </div>
+                    </div>
+
+                    <p class="job-position">Financial Services Quantitative Analyst</p>
+                    <p class="job-dates">March-September 2019</p>
+
+                    <ul>
+                        <li>My primary responsibility was to develop an ML model to improve the price decision-making process of a rental motor insurance product and implement A/B testing to demonstrate efficacy.</li>
+
+                        <li>Another contribution was developing a report communicating key metrics around model performance. I used a Python implementation of reveal.js to generate an HTML file every week. This saved plenty of time as it avoided re-creating the report in PowerPoint.</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-row">
+                        <div class="skill-label">Programming Languages:</div>
+                        <div class="skill-content">Python, R, TypeScript, and Rust.</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">SQL Dialects:</div>
+                        <div class="skill-content">Redshift, PostgreSQL, Apache Impala, MySQL, Snowflake, and using DBT for data pipeline management.</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">Model Development:</div>
+                        <div class="skill-content">Tensorflow, XGBoost, LightGBM, PyMC3, scikit-learn</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">Data Processing Packages:</div>
+                        <div class="skill-content">Pandas, Numpy and Polars in Python. Tidyverse in R</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">CD/CI:</div>
+                        <div class="skill-content">Git, Github actions, Docker, Pre-commit hooks, Pytest</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">Data Visualisation:</div>
+                        <div class="skill-content">Matplotlib, Plotly, Bokeh in Python. ggplot, Plotly R in R. Mantine Charts in TypeScript.</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">Web Applications:</div>
+                        <div class="skill-content">Dash, React with Vite and R Shiny</div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-label">API frameworks:</div>
+                        <div class="skill-content">FastAPI and Axum</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-institution">Lancaster University</h3>
+                        <span class="education-dates">2014 - 2018</span>
+                    </div>
+                    <p class="education-degree">MSci. First Class Honours in Mathematics (Study Abroad)</p>
+                    <ul>
+                        <li>I chose courses to establish skills in Probability theory, Stochastic processes, ML and traditional skills in mathematical rigour and analysis. Other courses include Statistical methods, Reinforcement learning, Mathematical Spaces, Ring Theory, and Stochastic Calculus with a focus on the derivation of the Black-Scholes model and Heston model for derivative pricing. Finally, my dissertation was complex analysis in several variables.</li>
+
+                        <li>My year abroad was at Western University in Ontario, Canada. It was a great experience to study in a different country and learn about the different teaching styles and cultures. Working abroad is something I would do in the future.</li>
+                    </ul>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-institution">Calderstones School</h3>
+                        <span class="education-dates">2012-2014</span>
+                    </div>
+                    <p class="education-degree">A-Levels</p>
+                    <p class="education-details">Mathematics: A*, Physics: B, Further Mathematics: B.</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-institution">Calderstones School</h3>
+                        <span class="education-dates">2010-2012</span>
+                    </div>
+                    <p class="education-degree">GCSEs</p>
+                    <p class="education-details">Mathematics: A, English Language: C, 8 other GCSEs with grades A-C, 2 OCR Awards in IT, and a BTEC in sport.</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    Nationalities: British and Irish(EU)
+                </div>
+            </section>
     </body>
 </html>
