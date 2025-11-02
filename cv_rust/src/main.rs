@@ -5,7 +5,6 @@ use headless_chrome::types::PrintToPdfOptions;
 fn print_cv_html() {
     // Launch headless Chrome
     let browser = Browser::new(LaunchOptions::default()).expect("Failed to launch browser");
-    // Open cv.html
     let tab = browser.new_tab().expect("Failed to open new tab");
     tab.navigate_to("file:///home/mike/github/collect/cv_rust/src/cv.html")
         .expect("Failed to navigate to cv.html");
